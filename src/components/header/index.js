@@ -7,7 +7,7 @@ import './index.scss';
 const Header = (props) =>{
     return(
         <header id="header">
-            <a href="/" className="logo"><StarIcon /></a>
+            <a href="#/" className="logo"><StarIcon /></a>
             <aside>
                 <Search />
                 {props.isCart ? <Cart count={props.count} /> : null }
