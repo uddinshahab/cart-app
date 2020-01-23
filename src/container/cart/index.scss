@@ -1,0 +1,145 @@
+@import '../../common/variables';
+@import '../../common/mixins';
+.cart-list{
+    flex: 1;
+    padding: 12px;
+    width: 100%;
+    @include desktop{
+        width: auto;
+    }
+    &__item{
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #999;
+        display: flex;
+        margin-bottom: 12px;
+        padding: 12px;
+        figure{
+            width: 100px;
+            @include desktop{
+                width: 120px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .item-details{
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            @include desktop{
+                align-items: center;
+                flex-direction: row;
+            }
+            .item-desc{
+                width: 90%;
+                @include desktop{
+                    padding: 8px 0;
+                    width: 25%;
+                }
+            h3{
+                color: #999;
+                margin-bottom: 10px;
+            }
+            p{
+                font-weight: bold;
+                display: flex;
+                font-size: 12px;
+                justify-content: space-between;
+                span{
+                    text-decoration: line-through;
+                    color: #999;
+                }
+                strong{
+                    color: #39AF3A;
+                }
+            }
+        }
+        
+        .item-val{
+            display: flex;
+            flex: 1;
+            margin: 12px 0;
+            @include desktop{
+                justify-content: center;
+                margin: 0;
+            }
+            span, em{
+                border: 1px solid #ddd;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+            }
+            span{
+                border-radius: 30px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            em{
+                margin: 0 8px;
+            }
+        }
+        button{
+            color: #333;
+            background: transparent;
+            padding: 0;
+            @include desktop{
+                margin-left: auto;
+            }
+            border: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
+    }
+}
+.cart-details{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin: 12px 12px 35px;
+    background-color: #fff;
+    border: 1px solid #999;
+    @include desktop{
+        width: 280px;
+        align-items: flex-start;
+        display: table;
+    }
+    h4{
+        text-transform: uppercase;
+        color: #999;
+        font-weight: 500;
+        border-bottom: 1px solid #ddd;
+        padding: 12px;
+    }
+    ul{
+        li{
+            display: flex;
+            font-size: 12px;
+            padding: 12px 12px 0;
+                color: #666;
+            label{
+                width: 50%;
+                display: flex;
+                em{
+                    margin-left: auto;
+                }
+            }
+            span{
+                margin-left: auto;
+            }
+            &:last-child{
+                border-top: 1px solid #999;
+                color: #333;
+                font-weight: bold;
+                margin-top: 12px;
+                padding-bottom: 12px;
+            }
+        }
+    }
+}

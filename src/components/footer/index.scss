@@ -1,0 +1,15 @@
+@import '../../common/variables';
+@import '../../common/mixins';
+#footer{
+    background-color: $brand-color;
+    bottom: 0;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    @include desktop{
+        width: $wrapper-width;
+    }
+}

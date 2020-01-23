@@ -1,0 +1,25 @@
+@import '../../common/variables';
+@import '../../common/mixins';
+.filter-form{
+    margin-bottom: 30px;
+}
+.input-range__track--background{
+    margin-top: 27px;
+    top: 0;
+}
+.input-range__track{
+    background-color: $brand-color;
+    border-radius: 0;
+    height: 2px;
+}
+.input-range__slider{
+    background-color: #fff;
+    border-color: #999;
+    height: 14px;
+    margin-top: -.5rem;
+    width: 14px;
+}
+.input-range__label--min, .input-range__label--max{
+    bottom: -35px;
+    display: none;
+}

@@ -1,0 +1,46 @@
+@import '../../common/variables';
+.modal {
+    background: #fff;
+    border: 1px solid #d0cccc;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    left: 50%;
+    margin: 100px auto 0;
+    position: fixed;
+    transition: all .5s;
+    width: 80%;
+    &-body {
+        font-weight: normal;
+        padding: 15px 20px;
+        h2{
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+    }
+    &-footer {
+        border-top: 1px solid #ddd;
+        display: flex;
+        .btn-modal {
+            background: #fff;
+            border: none;
+            color: $brand-color;
+            cursor: pointer;
+            flex: 1;
+            font-weight: 500;
+            padding: 10px;
+            &:first-child{
+                border-right: 1px solid #ddd;
+            }
+        }
+    }
+    &-back-drop {
+        background-color: rgba(48, 49, 48, 0.42);
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transition: all 1.3s;
+        width: 100%;
+    }
+}

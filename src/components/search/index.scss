@@ -1,0 +1,14 @@
+@import '../../common/variables';
+.search{
+    border-bottom: 1px solid $white-color;
+    padding: 3px;
+    input[type='text']{
+        background-color: transparent;
+        border: 0 none;
+        color: $white-color;
+    }
+    &-icon{
+        fill: $white-color;
+        width: 20px;
+    }
+}
